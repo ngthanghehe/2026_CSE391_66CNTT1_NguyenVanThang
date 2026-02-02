@@ -1,0 +1,148 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+
+.form-container {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  width: 600px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /
+}
+
+
+h3 {
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #333;
+}
+
+
+.form-group {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center; 
+}
+
+
+.align-top {
+  align-items: flex-start;
+}
+
+.form-group label {
+  width: 150px; 
+  font-weight: bold;
+  font-size: 13px;
+  flex-shrink: 0;
+}
+
+.form-group .input-wrapper {
+  flex-grow: 1; 
+}
+
+
+input[type="text"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 4px;
+  box-sizing: border-box; 
+  border: 1px solid #999;
+}
+
+
+.half-width {
+  width: 60%;
+}
+
+
+.radio-group label {
+  width: auto;
+  font-weight: normal;
+  margin-right: 10px;
+}
+
+.label-normal {
+  width: auto !important;
+  font-weight: normal !important;
+}
+
+
+.rich-text-editor {
+  border: 1px solid #999;
+  padding: 2px;
+}
+.toolbar {
+  background: #f4f4f4;
+  border-bottom: 1px solid #ccc;
+  padding: 2px;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+textarea {
+  width: 100%;
+  height: 80px;
+  border: none;
+  resize: vertical;
+  font-family: Arial, sans-serif;
+}
+
+
+.captcha-box {
+    font-family: monospace ; 
+    font-size: 30px;
+    letter-spacing: 3px;
+    display: inline-block;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+}
+.captcha-text {
+  font-size: 11px;
+  margin-bottom: 5px;
+}
+
+
+.footer {
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  text-align: right;
+}
+
+.nav-buttons {
+  float: left;
+}
+
+.btn {
+  padding: 5px 15px;
+  cursor: pointer;
+  font-size: 12px;
+  background-color: #333;
+  color: white;
+  border: 1px solid #000;
+}
+
+.btn-submit {
+  background-color: #333;
+  color: white;
+  border: 1px solid #000;
+}
+
+.required-note {
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+.helper-icon {
+  float: right;
+  color: gray;
+  cursor: pointer;
+}

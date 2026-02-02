@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài tập Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <form action="#" method="POST">
+        <h3>Basic Info</h3>
+
+        <div class="form-group">
+          <label>Employee ID</label>
+          <span>9</span>
+        </div>
+
+        <div class="form-group">
+          <label>Last Name</label>
+          <div class="input-wrapper">
+            <input type="text" value="Dodsworth" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>First Name</label>
+          <div class="input-wrapper">
+            <input type="text" value="Anne" />
+            <span class="helper-icon">💾</span>
+          </div>
+        </div>
+
+        <div class="form-group align-top">
+          <label>Gender</label>
+          <div class="input-wrapper radio-group">
+            <div>
+              <input type="radio" name="gender" id="m" />
+              <label for="m">Male</label>
+            </div>
+            <div>
+              <input type="radio" name="gender" id="f" />
+              <label for="f">Female</label>
+            </div>
+            <div>
+              <input type="radio" name="gender" id="x" />
+              <label for="x">XXX</label>
+            </div>
+            <div>
+              <input type="radio" name="gender" id="z" checked />
+              <label for="z">ZZZ</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Title</label>
+          <div class="input-wrapper">
+            <input type="text" value="Sales Representative" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Suffix</label>
+          <div class="input-wrapper"><input type="text" value="Ms." /></div>
+        </div>
+
+        <div class="form-group">
+          <label>BirthDate</label>
+          <div class="input-wrapper">
+            <input type="text" value="1969-07-02 00:00:00" />
+            <span style="float: right; font-size: 12px; line-height: 24px"
+              >(?)</span
+            >
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>HireDate</label>
+          <div class="input-wrapper">
+            <input type="text" value="1994-11-15 00:00:00" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>SSN # (if applicable)</label>
+          <div class="input-wrapper">
+            <input type="text" />
+            <span class="helper-icon">⊕</span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Reports To</label>
+          <div class="input-wrapper half-width">
+            <select>
+              <option selected>Buchanan</option>
+            </select>
+          </div>
+        </div>
+
+        <h3>Contact Info</h3>
+
+        <div class="form-group">
+          <label>Email</label>
+          <div class="input-wrapper">
+            <input type="email" placeholder="name@example.com" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Address</label>
+          <div class="input-wrapper">
+            <input type="text" value="7 Houndstooth Rd." />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>City</label>
+          <div class="input-wrapper"><input type="text" value="London" /></div>
+        </div>
+
+        <div class="form-group">
+          <label>Region</label>
+          <div class="input-wrapper"><input type="text" /></div>
+        </div>
+
+        <div class="form-group">
+          <label>Postal Code</label>
+          <div class="input-wrapper"><input type="text" value="WG2 7LT" /></div>
+        </div>
+
+        <div class="form-group">
+          <label>Country</label>
+          <div class="input-wrapper half-width">
+            <select>
+              <option selected>Russian Federation</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>US Home Phone</label>
+          <div class="input-wrapper">
+            <input type="text" value="(234)234-2342" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Photo</label>
+          <div class="input-wrapper">
+            <input type="text" value="EmpID9.bmp" />
+          </div>
+        </div>
+
+        <h3>Optional Info</h3>
+
+        <div class="form-group align-top">
+          <label>Notes</label>
+          <div class="input-wrapper rich-text-editor">
+            <div class="toolbar">
+              <b>B</b> <i>I</i> <u>U</u> &nbsp; | &nbsp; 📝 ✂️ 📋
+            </div>
+            <textarea>
+Anne has a BA degree in English from St. Lawrence College. She is fluent in French and German.ZZZ</textarea
+            >
+          </div>
+        </div>
+
+        <div class="form-group align-top">
+          <label>Preferred Shift</label>
+          <div class="input-wrapper">
+            <input type="checkbox" id="reg" />
+            <label class="label-normal" for="reg">Regular</label><br />
+            <input type="checkbox" id="gravy" checked />
+            <label class="label-normal" for="gravy">Gravy Yard</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Active?</label>
+          <div class="input-wrapper">
+            <input type="checkbox" checked />
+          </div>
+        </div>
+
+        <div class="form-group align-top">
+          <label>Are you human?</label>
+          <div class="input-wrapper">
+            <div class="captcha-box">TIDAWO</div>
+            <div class="captcha-text">Click to change</div>
+            <input type="text" style="width: 100%" />
+          </div>
+        </div>
+
+        <div class="footer">
+          <div class="nav-buttons">
+            <button type="button" class="btn">&lt;</button>
+            <button type="button" class="btn">&gt;</button>
+          </div>
+          <button type="submit" class="btn btn-submit">💾Submit</button>
+          <button type="button" class="btn">x Cancel</button>
+        </div>
+        <div class="required-note">* required</div>
+      </form>
+    </div>
+  </body>
+</html>

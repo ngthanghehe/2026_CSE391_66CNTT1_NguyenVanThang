@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HR Management</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-left">
+        <h2>HR Management</h2>
+        <a href="#">Home</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="Search..." />
+        <button class="btn-search">Search</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="top-bar">
+        <h2>Employee</h2>
+        <button class="btn-add">+ Add</button>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Position</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Fatima Beatriz</td>
+            <td>Fatima.Beatriz@gmail.com</td>
+            <td>0985674321</td>
+            <td>Staff</td>
+            <td>
+              <button class="btn-edit">Edit</button>
+              <button class="btn-delete">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Gabriel Hanna</td>
+            <td>Gabriel.Hanna@gmail.com</td>
+            <td>0353674231</td>
+            <td>Staff</td>
+            <td>
+              <button class="btn-edit">Edit</button>
+              <button class="btn-delete">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Frank Lamdo</td>
+            <td>Frank.Lamdo@gmail.com</td>
+            <td>0975444768</td>
+            <td>Manager</td>
+            <td>
+              <button class="btn-edit">Edit</button>
+              <button class="btn-delete">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Louis Tom</td>
+            <td>Louis.Tom@gmail.com</td>
+            <td>0789568223</td>
+            <td>Staff</td>
+            <td>
+              <button class="btn-edit">Edit</button>
+              <button class="btn-delete">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3>New Employee</h3>
+        <span style="cursor: pointer">X</span>
+      </div>
+      <div class="modal-body">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" />
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Phone</label>
+            <input type="text" />
+          </div>
+          <div class="form-group">
+            <label>Position</label>
+            <select>
+              <option>-- Select Position --</option>
+              <option>Staff</option>
+              <option>Manager</option>
+              <option>CEO</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Sex</label>
+          <input type="radio" name="sex" id="male" />
+          <label for="male" style="display: inline">Male</label>
+          <input
+            type="radio"
+            name="sex"
+            id="female"
+            style="margin-left: 10px"
+          />
+          <label for="female" style="display: inline">Female</label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-save">Save</button>
+        <button class="btn-cancel">Cancel</button>
+      </div>
+    </div>
+  </body>
+</html>
