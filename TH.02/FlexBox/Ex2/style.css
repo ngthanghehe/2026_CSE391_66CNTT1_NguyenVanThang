@@ -45,7 +45,7 @@
 #destinations {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 90px;
   padding: 0;
   list-style: none;
   margin-top: 40px;
@@ -58,7 +58,7 @@
 }
 
 .destination img {
-  width: 100%;
+  width: 120%;
   height: 100px;
   object-fit: cover;
   border-radius: 15px;
